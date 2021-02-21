@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".pageMenu.Ajouter"
+        android:paddingTop="20dp">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:text="Ajouter une voiture"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageVoiture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/titre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/add"
+            tools:src="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/immatriculation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/imageVoiture"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="immatriculation du véhicule"
+            android:inputType="text"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/person"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/numero_proprietaire"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/immatriculation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_custom"
+            android:drawableLeft="@drawable/phone"
+            android:hint="numéro du proporiétaire"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numero_proprietaire"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Ajouter"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/invalid_immatriculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/immatriculation"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:text="immatriculation invalide"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/invalid_numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numero_proprietaire"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:text="numéro invalide"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</ScrollView>

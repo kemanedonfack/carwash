@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/numero"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/connect"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/input_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/number"
+        android:inputType="phone"
+        android:padding="15dp"
+        android:drawablePadding="10sp"
+        android:drawableLeft="@drawable/phone"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_custom"
+        android:drawableLeft="@drawable/lock"
+        android:drawableRight="@drawable/masquer"
+        android:drawablePadding="10sp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:selectAllOnFocus="false"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/login"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>

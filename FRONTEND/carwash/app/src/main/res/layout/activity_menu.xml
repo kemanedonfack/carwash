@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    tools:ignore="ExtraText"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_bottom">
+
+    </FrameLayout>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/black"
+            app:bt_colorInactive="@color/colorPrimary"
+            app:bt_icon="@drawable/car"
+            app:bt_title="Ajouter" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/lavage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_title="Lavage"
+            app:bt_active="true"
+            app:bt_icon="@drawable/carwash"
+            app:bt_colorActive="@color/black"
+            app:bt_colorInactive="@color/colorPrimary"/>
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/terminer"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/black"
+            app:bt_colorInactive="@color/colorPrimary"
+            app:bt_icon="@drawable/car"
+            app:bt_title="Terminer" />
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+</RelativeLayout>
